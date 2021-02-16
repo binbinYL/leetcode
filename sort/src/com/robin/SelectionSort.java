@@ -14,16 +14,16 @@ public class SelectionSort {
         }
         System.out.println("arr before sort = " + str1.substring(0, str1.length() - 1));
 
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length - 1; i++) {
             int minPosition = i;
             for (int j = i + 1; j < arr.length; j++) {
-                if (arr[j] < arr[i]) {
+                if (arr[j] < arr[minPosition]) {
                     minPosition = j;
-                    int temp = arr[i];
-                    arr[i] = arr[minPosition];
-                    arr[minPosition] = temp;
                 }
             }
+            int temp = arr[i];
+            arr[i] = arr[minPosition];
+            arr[minPosition] = temp;
         }
         String str2 = "";
         for (int i = 0; i < arr.length; i++) {
