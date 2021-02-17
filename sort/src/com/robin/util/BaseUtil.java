@@ -13,7 +13,7 @@ public class BaseUtil {
         for (int i = 0; i < arr.length; i++) {
             str1 = str1 + arr[i] + ",";
         }
-        System.out.println("arr " + desc + " sort = " + str1.substring(0, str1.length() - 1));
+        System.out.println(desc + str1.substring(0, str1.length() - 1));
     }
 
     /**

@@ -8,7 +8,7 @@ import com.robin.util.BaseUtil;
 public class BubbleSort {
     public static void main(String[] args) {
         int[] arr = {5, 3, 8, 7, 9, 6, 1, 2, 4};
-        BaseUtil.printArray(arr, "before");
+        BaseUtil.printArray(arr, "before=");
 
         for (int i = 0; i < arr.length - 1; i++) {
             boolean doSwap = false;
@@ -23,6 +23,6 @@ public class BubbleSort {
                 return;
             }
         }
-        BaseUtil.printArray(arr, "after");
+        BaseUtil.printArray(arr, "after=");
     }
 }
