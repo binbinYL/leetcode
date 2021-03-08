@@ -19,6 +19,7 @@ public class InsertSort {
             }
 
         }
+
         BaseUtil.printArray(arr, "after =  ");
     }
 }
